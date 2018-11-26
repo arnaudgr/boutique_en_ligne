@@ -2,14 +2,38 @@
 <html>
   <head>
     <title>BoutiqueEnLigne</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+      <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" %>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+
+ <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+
+      <!-- Favicon  -->
+      <link rel="icon" href="img/core-img/favicon.ico">
+
+      <!-- Core Style CSS -->
+      <link rel="stylesheet" href="css/core-style.css">
+      <link rel="stylesheet" href="style.css">
+
+ </head>
+
+
+  
   <body>
+    <%= render 'layouts/navbar'  %>
+    <%= render 'layouts/newsletter'  %>
+    <%= render 'layouts/footer'  %>
+
     <%= yield %>
   </body>
 </html>
