@@ -10,7 +10,7 @@ gem 'font-awesome-rails'
 gem "jquery-rails"
 gem 'popper_js', '~> 1.12.9'
 
-
+gem 'devise'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
