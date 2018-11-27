@@ -29,12 +29,15 @@
 
 
 
-  
+
   <body>
     <%= render 'layouts/navbar'  %>
     <%= render 'items/items_list'  %>
     <%= render 'layouts/newsletter'  %>
     <%= render 'layouts/footer'  %>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
     <%= yield %>
      <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
