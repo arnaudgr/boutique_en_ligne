@@ -1,4 +1,4 @@
-Dotenv.load
+require 'dotenv'
 
 Rails.configuration.stripe = {
   :publishable_key => ENV['STRIPE_PUBLISHABLE_KEY'],
