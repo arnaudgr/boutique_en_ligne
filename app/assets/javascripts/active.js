@@ -3,7 +3,7 @@
 
     var $window = $(window);
 
-/*
+
     // :: 1.0 Masonary Gallery Active Code
 
     var proCata = $('.amado-pro-catagory');
@@ -20,7 +20,7 @@
             });
         });
     }
-*/
+
     // :: 2.1 Search Active Code
     var amadoSearch = $('.search-nav');
     var searchClose = $('.search-close');
