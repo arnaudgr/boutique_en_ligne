@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<p>Bonjour, <%= @user.email %></p>
+<p>Nous te confirmons ta commande <%= @order.id %></p>
+<p>Ci-joint le récapitulatif:  </p>
+<ul>
+
+<li>Produits: <%= @order.item_id %></li>
+<li>Valeur: <%=(@order.price) %></li>
+<ul>
+<p>Merci de ta confiance.</p>
+<p>Le Chat-Loupé </p>
