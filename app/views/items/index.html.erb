@@ -1,5 +1,4 @@
-      <%= stylesheet_link_tag  'core-style.css'  %>
-      
+
 
 
 
@@ -9,7 +8,7 @@
                 <!-- Single Catagory -->
                  <% @items.each do |item| %>
                 <div class="single-products-catagory clearfix">
-                    
+
                 <%= link_to (image_tag item.image_url), item %>
                         <!-- Hover Content -->
                         <div class="hover-content">
@@ -17,13 +16,12 @@
                             <p>From $180</p>
                             <h4>Modern Cat</h4>
                         </div>
-                    
+
                 </div>
 
-               
+
             </div>
             <% end %>
         </div>
         </div>
         <!-- Product Catagories Area End -->
-  
