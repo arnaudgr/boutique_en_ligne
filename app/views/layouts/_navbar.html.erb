@@ -1,5 +1,9 @@
 
 <!-- Search Wrapper Area End -->
+	<script type="text/javascript"> $(function ()
+{	 $("#myModal").modal({show:false })}); </script>
+<%= render "modal/myModalSignUp" %>
+<%= render "modal/myModal" %>
 
     <!-- ##### Main Content Wrapper Start ##### -->
     <div class="main-content-wrapper d-flex clearfix">
@@ -9,7 +13,7 @@
             <!-- Navbar Brand -->
             <div class="amado-navbar-brand">
                 
-              <a href="index.html"> <img <%= image_tag ("logo.png") %>></a>
+              <a href="index.html"> <img <%= image_tag ("cat_logo.png") %>></a>
             </div>
             <!-- Navbar Toggler -->
             <div class="amado-navbar-toggler">
@@ -23,7 +27,7 @@
         <div class="mobile-nav">
             <!-- Navbar Brand -->
             <div class="amado-navbar-brand">
-                <a href="index.html"><img <%= image_tag ("logo.png") %>></a>
+                <a href="index.html"><img <%= image_tag ("cat_logo.png") %>></a>
             </div>
             <!-- Navbar Toggler -->
             <div class="amado-navbar-toggler">
@@ -41,9 +45,28 @@
             <div class="logo">
                 <a href="index.html"><%= image_tag ("cat_logo.png") %> <p> Le Chat-Loupé  </p></a>
             </div>
+            
+            <!--
+            <div class="amado-btn-group mt-30 mb-100">
+                
+            <button type="button" class="btn amado-btn mb-15" data-toggle="modal" data-target="#exampleModal">Login/ Sign Up </button>
+               
+            </div>
+             -->
+
+              <%= link_to "Login", "#login", "data-toggle" => "modal", :class => 'btn amado-btn mb-15' %>
+              <%= link_to "Sign up", "#sign_up", "data-toggle" => "modal", :class => 'btn amado-btn mb-15' %>
+
+            
+
+
+
+
+
             <!-- Amado Nav -->
             <nav class="amado-nav">
                 <ul>
+                  
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="checkout.html">Profil</a></li>
                     <li><a href="shop.html">Shop</a></li>
@@ -54,10 +77,7 @@
                 </ul>
             </nav>
             <!-- Button Group -->
-            <div class="amado-btn-group mt-30 mb-100">
-                <a href="#" class="btn amado-btn mb-15">Login/ Sign Up </a>
-                <a href="#" class="btn amado-btn active">Don't touch</a>
-            </div>
+            
             <!-- Cart Menu -->
             <div class="cart-fav-search mb-100">
                 <a href="cart.html" class="cart-nav"> <%= image_tag ("cart.png") %> Panier <span>(0)</span></a>
@@ -73,3 +93,9 @@
             </div>
         </header>
         <!-- Header Area End -->
+
+
+
+        
+
+        
