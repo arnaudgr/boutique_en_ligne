@@ -10,6 +10,7 @@ gem 'font-awesome-rails'
 gem "jquery-rails"
 gem 'popper_js', '~> 1.12.9'
 
+
 gem 'mailjet'
 
 gem 'devise'
@@ -44,7 +45,6 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'dotenv'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

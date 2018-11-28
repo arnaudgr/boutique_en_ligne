@@ -1,7 +1,5 @@
 class UserMailer < ApplicationMailer
-    require 'dotenv'
-    Dotenv.load
-
+    
     def new_order
      #puts params.inspect
     
