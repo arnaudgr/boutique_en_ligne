@@ -1,15 +1,15 @@
-<%= form_tag charges_path do %>
+<%= form_tag charges_path(@amount) do %>
 
   <article>
     <label class="amount">
-      <span>Amount: €10.00</span>
+      <span>Amount: <%= @amount %> cents</span>
     </label>
   </article>
 
   <script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
         data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
         data-description="Valider mon panier"
-        data-amount="1000">
+        data-amount="<%=@amount%>">
   </script>
 
 <% end %>
