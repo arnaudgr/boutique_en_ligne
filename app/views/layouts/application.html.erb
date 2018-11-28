@@ -9,7 +9,7 @@
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
- 
+
 
       <meta charset="UTF-8">
       <meta name="description" content="">
@@ -21,7 +21,7 @@
       <!-- Favicon  -->
       <link rel="icon" href="assets/images/favicon.ico">
 
-     
+
 
 
 
@@ -48,30 +48,26 @@
     <!-- Search Wrapper Area End -->
 
 
- 
+
 
     <%= render 'layouts/navbar'  %>
     <!-- ###########  PAGES GOOD ################
     render 'items/items_list'
-    render 'carts/cart_test'  
-    
-    render 'user/test_show_user' 
+    render 'carts/cart_test'
+
+    render 'user/test_show_user'
     render 'orders/test_index_orders
-    render 'items/test_categories_items' 
+    render 'items/test_categories_items'
     render 'layouts/myModal', resource: User.new, resource_name: :user, devise_mapping: Devise.mappings[:user]
     -->
-      
-     <%= render 'user/test_show_user'  %>
-    <%= render 'layouts/newsletter'  %>
-    <%= render 'layouts/footer'  %>
-    
-    
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
     <%= yield %>
-     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->   
+    <%= render 'layouts/newsletter'  %>
+    <%= render 'layouts/footer'  %>
+     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
     <%= javascript_include_tag 'jquery/jquery-2.2.4.min.js' %>
     <!-- Popper js -->
     <%= javascript_include_tag 'popper.min.js' %>
