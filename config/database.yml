@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: boutique_en_ligne_production
-  username: boutique_en_ligne
-  password: <%= ENV['BOUTIQUE_EN_LIGNE_DATABASE_PASSWORD'] %>
+  # username: boutique_en_ligne
+  # password: <%= ENV['BOUTIQUE_EN_LIGNE_DATABASE_PASSWORD'] %>
