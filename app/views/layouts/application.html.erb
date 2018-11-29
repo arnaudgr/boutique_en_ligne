@@ -7,18 +7,10 @@
       <%= csp_meta_tag %>
       <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" %>
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-       <%= stylesheet_link_tag  'core-style.css'  %>
+    
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
        <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
-    <%= javascript_include_tag 'jquery/jquery-2.2.4.min.js' %>
-    <!-- Popper js -->
-    <%= javascript_include_tag 'popper.min.js' %>
-    <!-- Bootstrap js -->
-    <%= javascript_include_tag 'bootstrap.min.js' %>
-    <!-- Plugins js -->
-     <%= javascript_include_tag 'plugins.js' %>
-    <!-- Active js -->
-     <%= javascript_include_tag 'active.js' %>
+ 
 
    </head>
 
@@ -69,9 +61,18 @@
     render 'items/test_categories_items'
     render 'layouts/myModal', resource: User.new, resource_name: :user, devise_mapping: Devise.mappings[:user]
     -->
-
+   <%= javascript_include_tag 'jquery/jquery-2.2.4.min.js' %>
+    <!-- Popper js -->
+    <%= javascript_include_tag 'popper.min.js' %>
+    <!-- Bootstrap js -->
+    <%= javascript_include_tag 'bootstrap.min.js' %>
+    <!-- Plugins js -->
+     <%= javascript_include_tag 'plugins.js' %>
+    <!-- Active js -->
+     <%= javascript_include_tag 'active.js' %>
     
-
+       <%= render "modal/myModalSignUp" %>
+            <%= render "modal/myModal" %>
 
     <%= render 'layouts/navbar'  %>
      <%= yield %>

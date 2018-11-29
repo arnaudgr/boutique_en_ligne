@@ -6,23 +6,23 @@
 
                             <div class="cart-title">
                                 <h2>Commande</h2>
-                            
+                             
 
 
-                                <div class="col-12 col-lg-4">
-                        <div class="cart-summary">
-                    <h2> Récapitulatif de votre commande n° <%= @order.id %></h2>
+                                
+                        
+                    <h2> Récapitulatif de votre commande n°</h2>
                             <ul class="summary-table">
 
-                                <% @order.items.each do |item| %>
+                                
 
-                            <li><span> Articles </span> <span> <%= item.title %> 
+                            <li><span> Articles </span> <span>
                             </span></li>
 
-                                <li><span>delivery:</span> <span> <%= link_to image_tag item.image_url  %></span></li>
+                                <li><span>delivery:</span> <span>  </span></li>
                                 <li><span>total:</span> <span>   </span></li>
 
-                                <% end %>
+                                
                             </ul>
 
                             <div class="payment-method">
@@ -41,8 +41,7 @@
                             <div class="cart-btn mt-100">
                                 <a href="#" class="btn amado-btn w-100">Checkout</a>
                                 </div>
-                            </div>
-                        </div>
+                         
                     </div>
 
 
