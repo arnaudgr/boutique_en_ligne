@@ -1,7 +1,7 @@
 
 <!-- Search Wrapper Area End -->
 	<script type="text/javascript"> $(function ()
-{	 $("#myModal").modal({show:false })}); </script>
+	{	 $("#myModal").modal({show:false })}); </script>
 
     <!-- ##### Main Content Wrapper Start ##### -->
     <div class="main-content-wrapper d-flex clearfix">
@@ -11,7 +11,7 @@
             <!-- Navbar Brand -->
             <div class="amado-navbar-brand">
 
-              <a href="index.html"> <img <%= image_tag ("cat_logo.png") %>></a>
+               <img <%= image_tag ("cat_logo.png") %>></a>
             </div>
             <!-- Navbar Toggler -->
             <div class="amado-navbar-toggler">
@@ -25,7 +25,7 @@
         <div class="mobile-nav">
             <!-- Navbar Brand -->
             <div class="amado-navbar-brand">
-                <a href="index.html"><img <%= image_tag ("cat_logo.png") %>></a>
+                <img <%= image_tag ("cat_logo.png") %>>
             </div>
             <!-- Navbar Toggler -->
             <div class="amado-navbar-toggler">
@@ -41,7 +41,7 @@
             </div>
             <!-- Logo -->
             <div class="logo">
-                <a href="index.html"><%= image_tag ("cat_logo.png") %> <p> Le Chat-Loupé  </p></a>
+                <%= link_to root_path%> <%= image_tag ("cat_logo.png") %> <p> Le Chat-Loupé  </p> 
             </div>
 
             <!--
@@ -67,14 +67,20 @@
             <nav class="amado-nav">
                 <ul>
 
-                    <li class="active"><a href="index.html">Home</a></li>
-									<% if user_signed_in? %>
-                    <li><a href="checkout.html">Profil</a></li>
-									<% end %>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="product-details.html">Product</a></li>
-                    <li><a href="cart.html">Panier</a></li>
-                    <li><a href="checkout.html">Finaliser commande</a></li>
+                    <li class="active"><%= link_to "Home",  root_path %> </li>
+									
+
+                                    <% if user_signed_in? %>
+                    <li>  <%= link_to "PROFIL" %>          </li>
+									
+                    
+                    <li> <%= link_to("Panier", { controller: "carts", action: "index" } ) %> </li>
+
+
+                    <li> <%= link_to(" File l'argent ", { controller: "orders", action: "index" } ) %>
+                    </li> 
+                    <% end %>
+                   
 
                 </ul>
             </nav>
@@ -82,7 +88,7 @@
 
             <!-- Cart Menu -->
             <div class="cart-fav-search mb-100">
-                <a href="cart.html" class="cart-nav"> <%= image_tag ("cart.png") %> Panier <span>(0)</span></a>
+                
                 <a href="#" class="fav-nav">  <%= image_tag ("favorites.png") %> Favoris</a>
                 <a href="#" class="search-nav"><%= image_tag ("search.png") %> Rechercher </a>
             </div>
@@ -93,8 +99,7 @@
                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </div>
-            <%= render "modal/myModalSignUp" %>
-            <%= render "modal/myModal" %>
+            
         </header>
         <!-- Header Area End -->
 
