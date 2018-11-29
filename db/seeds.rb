@@ -7,18 +7,18 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-5.times do |i|
-item = Item.create(title: "cat #{i+1}",
-  description: Faker::Cat.breed,
-  price: 25,
-  image_url: "chat#{i+1}.png")
-end
-
-5.times do |j|
-order = Order.create(item_id: Faker::Number.between(1, 10),
-    user_id: Faker::Number.between(1, 10))
-end
-
-5.times do |j|
-cart = Cart.create(item_id: Faker::Number.between(1, 10))
-end
+# 5.times do |i|
+# item = Item.create(title: "cat #{i+1}",
+#   description: Faker::Cat.breed,
+#   price: 25,
+#   image_url: "chat#{i+1}.png")
+# end
+#
+# 5.times do |j|
+# order = Order.create(item_id: Faker::Number.between(1, 10),
+#     user_id: Faker::Number.between(1, 10))
+# end
+#
+# 5.times do |j|
+# cart = Cart.create(item_id: Faker::Number.between(1, 10))
+# end
