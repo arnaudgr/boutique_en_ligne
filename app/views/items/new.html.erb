@@ -1,0 +1,32 @@
+<% if user_signed_in? %>
+
+  <%= form_for @item, url: {action: "create"} do |form| %>
+    <div class="field">
+      <%= form.label :title %>
+      <%= form.text_field :title %>
+    </div>
+
+    <div class="field">
+      <%= form.label :description %>
+      <%= form.text_field :description %>
+    </div>
+
+    <div class="field">
+      <%= form.label :price %>
+      <%= form.text_field :price %>
+    </div>
+
+    <div class="field">
+      <%= form.label :image_url %>
+      <%= form.file_field :image_url %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+
+  <% end %>
+
+<% else %>
+Vous devez être connecté pour accéder à cette page
+<% end %>
