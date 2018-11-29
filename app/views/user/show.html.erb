@@ -25,7 +25,9 @@
                                 <div class="line"></div>
                                 <p class="product-price"> Profil </p>
                                 sss
-                                    <h6>Nom Prénom </h6>
+                                    <h6> Nom : @user.name </h6>
+                                    <h6> Mail: @user.email </h6>
+                                    <%= link_to "Commandes", users_order_path(current_user.id) %>
                                 </a>
                                 <!-- Ratings & Review -->
                                
