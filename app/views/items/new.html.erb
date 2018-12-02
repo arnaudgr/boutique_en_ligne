@@ -1,4 +1,4 @@
-<% if user_signed_in? %>
+<% if current_user.admin? %>
 
   <%= form_for @item, url: {action: "create"} do |form| %>
     <div class="field">
@@ -28,5 +28,5 @@
   <% end %>
 
 <% else %>
-Vous devez être connecté pour accéder à cette page
+Vous devez être administrateur pour accéder à cette page
 <% end %>
